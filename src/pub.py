@@ -10,5 +10,9 @@ class Pub:
 
     def age_challenge(self, age):
         if age >= 18:
-            return True
+            return "What would you like to drink?"
+        else:
+            return "No"
+        
+
         

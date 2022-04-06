@@ -10,6 +10,7 @@ class TestPub(unittest.TestCase):
         self.drink2 = Drink("wine", 6, 3)
         self.drink3 = Drink("gin", 8, 5)
         self.customer = Customer("Billy", 24, 1000)
+        self.customer2 = Customer("Sarah", 16, 300)
         
 
     def test_pub_has_name(self):
@@ -25,6 +26,16 @@ class TestPub(unittest.TestCase):
         self.assertEqual(3, self.pub.till)
 
     def test_age_challenge(self):
-        self.assertEqual(True, self.pub.age_challenge(self.customer.age))
+        self.assertEqual("What would you like to drink?", self.pub.age_challenge(self.customer.age))
+
+    def test_age_challenge2(self):
+        self.assertEqual("No", self.pub.age_challenge(self.customer2.age))
+
+
+ 
+
+
+
+
 
    
