@@ -1,4 +1,6 @@
 
+from src.drink import *
+
 class Pub:
     def __init__(self, name):
         self.name = name
@@ -15,4 +17,6 @@ class Pub:
             return "No"
         
 
-        
+    def serve_a_drink(self, drink):
+        # get the units of the drink
+        # add these units to drunk level
